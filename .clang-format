@@ -1,6 +1,26 @@
+BasedOnStyle: Google
+ColumnLimit:     100
+IndentWidth:     4
+---
+Language: JavaScript
+IndentWidth:     2
+---
+Language: HTML
+IndentWidth:     2
+---
+Language: CSS
+IndentWidth:     2
+---
+Language: SCSS
+IndentWidth:     2
+---
+Language: Sass
+IndentWidth:     2
+---
+Language: Less
+IndentWidth:     2
 ---
 Language:        Cpp
-# BasedOnStyle:  LLVM
 AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
 AlignConsecutiveAssignments: false
@@ -91,8 +111,11 @@ PenaltyExcessCharacter: 1000000
 PenaltyReturnTypeOnItsOwnLine: 60
 PointerAlignment: Right
 RawStringFormats: 
-  - Delimiter:       pb
-    Language:        TextProto
+  - Language:        TextProto
+    Delimiters:       [pb]
+    BasedOnStyle:    google
+  - Language:        JavaScript
+    Delimiters:       [js]
     BasedOnStyle:    google
 ReflowComments:  true
 SortIncludes:    true
@@ -109,7 +132,7 @@ SpacesInCStyleCastParentheses: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
 Standard:        Cpp11
-TabWidth:        8
+TabWidth:        4
 UseTab:          Never
 ...
 

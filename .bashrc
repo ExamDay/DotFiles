@@ -94,6 +94,8 @@ alias l='ls -CF'
 alias venv='source venv/bin/activate'
 alias hazip='curl icanhazip.com'
 alias startvpn='bash ~/.scripts/vpn.bash'
+alias ts='trash'
+alias py='python3'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -157,3 +159,16 @@ xset r rate 300 75
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
+
+. $HOME/.asdf/completions/asdf.bash
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash

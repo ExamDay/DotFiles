@@ -1,6 +1,15 @@
 #-- TO SET UP SCRIPTS TO RUN ON BASH ALIASES --#
 #copy .scripts folder into home directory
 
+#-- BETTER WAY TO REMOVE STUFF --#
+sudo apt install trash-cli
+
+#-- REQUIRED --#
+sudo apt install git
+sudo apt install python3-pip
+pip3 install black
+pip3 install pep-8
+
 #-- TO INSTALL LATEST GCC AND G++ --#
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
@@ -19,6 +28,17 @@ sudo apt install vim-gtk3
 sudo apt install clang-format
 sudo apt-get install clangd-10
 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-10 100
+
+#-- OTHER FORMATTERS --#
+sudo npm -g install js-beautify
+npm install --save-dev --save-exact prettier
+
+#-- REQUIRED FONTS (select one powerline font for powerline to display properly) --#
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
 
 #-- TO INSTALL VUNDLE FOR VIM --# 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
