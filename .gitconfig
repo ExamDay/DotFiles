@@ -1,0 +1,7 @@
+[user]
+	email = watch.closely.0@gmail.com
+	name = ExamDay
+[core]
+	excludesfile = /home/gml/.gitignore_global
+[credential]
+	helper = cache
